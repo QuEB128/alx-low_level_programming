@@ -1,0 +1,2 @@
+#!/bin/bash
+Igcc -S $CFILE
