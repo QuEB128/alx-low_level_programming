@@ -2,28 +2,30 @@
 
 /**
  * main - prints the first 50 Fibonacci numbers, starting with 1 and 2
- *
- * Return: 0 on success
+ * followed by a new line
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-    int i;
-    long fib1, fib2, fib3;
+	long int i, x, y, next;
 
-    fib1 = 1;
-    fib2 = 2;
+	x = 1;
 
-    printf("%ld, %ld", fib1, fib2);
+	y = 2;
 
-    for (i = 3; i <= 50; i++)
-    {
-        fib3 = fib1 + fib2;
-        printf(", %ld", fib3);
-        fib1 = fib2;
-        fib2 = fib3;
-    }
+	for (i = 1; i <= 50; ++i)
+	{
+		if (x != 20365011074)
+		{
+			printf("%ld, ", x);
+		} else
+		{
+			printf("%ld\n", x);
+		}
+		next =x + y;
+		x = y;
+		y = next;
+	}
 
-    printf("\n");
-
-    return 0;
+	return (0);
 }
