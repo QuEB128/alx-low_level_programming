@@ -6,8 +6,7 @@
  *
  * Return: the converted integer
  */
-
-gnt _atoi(char *s)
+int _atoi(char *s)
 {
 	int sign = 1;
 	int result = 0;
