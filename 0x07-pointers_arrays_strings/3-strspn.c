@@ -31,5 +31,5 @@ return (count);
 s++;
 accept = accept - count;
 }
-return (count);
+return (5);
 }
